@@ -8,14 +8,28 @@
 // dichiara un array con i cognomi
 var cognomi = ['Bianchi', 'Rossi' , 'Duzioni' , 'Balsano' , 'Verdi'];
 
+// dichiara le variabili
+var cognomeUtente, primaGrande, restoNormale;
+
+
 // crea un prompt e fai in modo che il risultato venga pushato dentro l'array
 var cognomeUtente = prompt('Inserisci il tuo cognome');// in questo modo chiedo all'utente il cognome
+
+
+// prendi la prima lettera e rendila maiuscola
+var primaGrande = cognomeUtente.charAt(0).toUpperCase();
+// prendi il resto del cognome e rendilo minuscolo
+var restoNormale = cognomeUtente.slice(1).toLowerCase();
+// fai la somma tra la prima lettera ed il reso del cognome
+cognomeUtente = primaGrande + restoNormale;
+
+
 cognomi.push(cognomeUtente);// con il ".push" inseirisce il cognome creando un nuoov elemento (che va alla fine)
-var elenco = cognomi.toUpperCase();
-elenco.sort();// con il ".sort" ordina alfabeticamente l'array cognomi
+cognomi.sort();// con il ".sort" ordina alfabeticamente l'array cognomi
+
 
 // prova a vedere se non esplode il mondo
-console.log(elenco);
+console.log(cognomi);
 
 
 
