@@ -11,12 +11,11 @@ var cognomi = ['Bianchi', 'Rossi' , 'Duzioni' , 'Balsano' , 'Verdi'];
 // crea un prompt e fai in modo che il risultato venga pushato dentro l'array
 var cognomeUtente = prompt('Inserisci il tuo cognome');// in questo modo chiedo all'utente il cognome
 cognomi.push(cognomeUtente);// con il ".push" inseirisce il cognome creando un nuoov elemento (che va alla fine)
-primaLettera = str.slice(0)
-maiuscola = primaLettera.toUpperCase();
-cognomi.sort();// con il ".sort" ordina alfabeticamente l'array cognomi
+var elenco = cognomi.toUpperCase();
+elenco.sort();// con il ".sort" ordina alfabeticamente l'array cognomi
 
 // prova a vedere se non esplode il mondo
-console.log(cognomi);
+console.log(elenco);
 
 
 
