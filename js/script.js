@@ -33,6 +33,6 @@ var posizione = cognomi.indexOf(cognomeUtente) + 1;
 console.log(cognomi, posizione);
 
 // stampa a schermo la lista di nomi
-
-document.getElementById('lista').innerHTML = cognomi, posizione;
+document.getElementById('lista').innerHTML += cognomi;
+document.getElementById('posizione-utente').innerHTML += posizione;
 
